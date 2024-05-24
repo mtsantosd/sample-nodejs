@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN \
     apt-get update && \
-    apt-get -f install && \
+    apt-get -f install --no-install-recommends && \
     pwd && \
     ls -l && \
     npm install && \
