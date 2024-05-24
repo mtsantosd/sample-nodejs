@@ -5,8 +5,6 @@ COPY . /app
 WORKDIR /app
 
 RUN \
-    apt-get update && \
-    apt-get -f install --no-install-recommends -y && \
     pwd && \
     ls -l && \
     npm install && \
