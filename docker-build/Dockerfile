@@ -5,6 +5,8 @@ COPY . /app
 WORKDIR /app
 
 RUN \
+    apt-get update && \
+    apt-get -f install && \
     pwd && \
     ls -l && \
     npm install && \
