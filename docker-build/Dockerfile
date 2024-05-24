@@ -1,5 +1,5 @@
 # From https://github.com/SaschaSchwarze0/npm-simple
-FROM ghcr.io/shipwright-io/shipwright-samples/node:12
+FROM ghcr.io/shipwright-io/shipwright-samples/node:16
 
 COPY . /app
 WORKDIR /app
